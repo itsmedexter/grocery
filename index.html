@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos List</title>
+    <script src="https://kit.fontawesome.com/3b309e0f10.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Grocery List</h1>
+
+            <form class="add text-center my-4">
+                <label class="text-light">Add a new item</label>
+
+                <div class="input-group">
+                <input class="form-control m-auto" type="text" name="add" id="recipe">
+                <!-- <i class="fas fa-plus-square new-item"></i> -->
+                <input type="submit" value="add" class="btn btn-secondary">
+                </div>
+            </form>
+            <!-- <form class="search">
+                <input class="form-control m-auto" type="text" name="search" placeholder="Search Todos">
+            </form> -->
+        </header>
+        <ul class="list-group todos mx-auto text-light">
+            <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="far fa-trash-alt delete"></i>
+            </li> -->
+           
+        </ul>
+
+    </div>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB9_BibFXzisF92S7R9UMNNcXOnNWTcKHI",
+    authDomain: "grocery-ba183.firebaseapp.com",
+    databaseURL: "https://grocery-ba183.firebaseio.com",
+    projectId: "grocery-ba183",
+    storageBucket: "grocery-ba183.appspot.com",
+    messagingSenderId: "88041728",
+    appId: "1:88041728:web:7ea4d7a60662ad31d26be5",
+    measurementId: "G-Q7LLZDDYV1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
+
+<script src="script.js"></script>    
+</body>
+</html>

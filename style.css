@@ -1,0 +1,39 @@
+body {
+    background: darkblue;
+}
+
+.container{
+    max-width: 400px;
+}
+
+input[type=text],
+input[type=text]:focus{
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+}
+
+.todos li{
+    background: rgb(44, 44, 182);
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.new-item{
+    cursor: pointer;
+    font-size: 2.4em;
+
+}
+
+.filtered{
+    display: none !important;
+}
+
+.deletebtn{
+color: white;
+background: none;
+border: none;
+}
